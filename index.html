@@ -91,7 +91,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><span>Menu</span> <i></i></a>
+						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 						<a href="index.html" class="navbar-brand"><span>Maracabarro FC</span></a>
 					</div>
 				</div>
@@ -107,12 +107,11 @@
 							<div class="row">								
 								<div class="col-md-6 fh5co-text">
 									<h2 class="to-animate intro-animate-1">
-										Aqui vai alguma frase
+										&ldquo;Muy mas que una patota&rdquo;										
 									</h2>
-									<p class="to-animate intro-animate-2">
-										Falando brevemente sobre a gente
-									</p>
+									
 									<p class="to-animate intro-animate-3">
+										<br>
 										<a href="#" data-nav-section="login" class="btn btn-primary btn-md">Login</a>
 									</p>
 								</div>
@@ -126,18 +125,16 @@
 					<div id="fh5co-clients">
 						<div class="container">
 							<div class="row text-center">
+								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">								
+								</div>								
 								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
-									<figure class="fh5co-client"><img src="images/client_1.png" alt="Free HTML5 Template"></figure>
+									<figure class="fh5co-client"><img src="images/fornecedores/Icone.png"></figure>
 								</div>
 								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
-									<figure class="fh5co-client"><img src="images/client_2.png" alt="Free HTML5 Template"></figure>
-								</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
-									<figure class="fh5co-client"><img src="images/client_3.png" alt="Free HTML5 Template"></figure>
-								</div>
-								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">
-									<figure class="fh5co-client"><img src="images/client_4.png" alt="Free HTML5 Template"></figure>
-								</div>
+									<figure class="fh5co-client"><img src="images/fornecedores/SuperBolla.png"></figure>
+								</div>	
+								<div class="col-md-3 col-sm-6 col-xs-6 to-animate">									
+								</div>								
 							</div>
 						</div>
 					</div>
@@ -195,7 +192,7 @@
 						<div class="container">
 							<div class="row animate-box">
 
-								<div class="owl-carousel">
+								<div id="owl-demo" class="owl-carousel">
 
 									<div class="item">							
 										<div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
@@ -347,10 +344,10 @@
 						</div>	
 					</div>
 															
-					<div id="fh5co-subscribe" data-section="login">
+					<div ng-controller="estatutoCtrl" id="fh5co-subscribe" data-section="login">
 						<div class="container">
 							<div class="row animate-box">
-								<form action="#" method="post">
+								<form ng-submit="teste()" method="post">
 									<div class="col-md-4 col-sm-4">
 										<div class="form-group">
 											<input type="email" class="form-control" placeholder="Email">
@@ -370,8 +367,6 @@
 							</div>
 						</div>
 					</div>
-
-
 				</div>
 			</div>
 			
@@ -380,42 +375,26 @@
 				<div class="fh5co-footer-content">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-3 col-sm-4 col-md-push-3">
-								<h3 class="fh5co-lead">About</h3>
+							<div class="col-md-3 col-sm-4 col-md-push-3">								
 								<ul>
-									<li><a href="#">Tour</a></li>
-									<li><a href="#">Company</a></li>
-									<li><a href="#">Jobs</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">New Features</a></li>
-									<li><a href="#">Contact Us</a></li>
+									<li></li>
 								</ul>
 							</div>
-							<div class="col-md-3 col-sm-4 col-md-push-3">
-								<h3 class="fh5co-lead">Support</h3>
+							<div class="col-md-3 col-sm-4 col-md-push-3">								
 								<ul>
-									<li><a href="#">Help Center</a></li>
-									<li><a href="#">Terms of Service</a></li>
-									<li><a href="#">Security</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">More Apps</a></li>
+									<li></li>
 								</ul>
 							</div>
-							<div class="col-md-3 col-sm-4 col-md-push-3">
-								<h3 class="fh5co-lead">More Links</h3>
+							<div class="col-md-3 col-sm-4 col-md-push-3">								
 								<ul>
-									<li><a href="#">Feedback</a></li>
-									<li><a href="#">Frequently Ask Questions</a></li>
-									<li><a href="#">Terms of Service</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Careers</a></li>
-									<li><a href="#">More Apps</a></li>
+									<li></li>
 								</ul>
 							</div>
 
 							<div class="col-md-3 col-sm-12 col-md-pull-9">
-								<div class="fh5co-footer-logo"><a href="index.html">Maracabarro FC</a></div>
+								<div class="fh5co-footer-logo">
+									<a href="" data-nav-section="home">Maracabarro FC</a>
+								</div>
 								<p class="fh5co-copyright">
 									<small>
 										&copy; 2017. All Rights Reserved. 
@@ -454,5 +433,7 @@
 		<script src="js/jquery.countTo.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>	
-	</body>
+	</body>	
 </html>
+
+
